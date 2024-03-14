@@ -1,8 +1,10 @@
 import pomDog from "../../assets/img-temporary/Pomeranian-puppy.jpg";
-import { useAnimalContext } from "../../utils/context";
+import { useAnimalContext, useProductContext } from "../../utils/context";
 
 const CardAnimal: React.FC = () => {
   const animalItems = useAnimalContext();
+  const productItems = useProductContext();
+
   return (
     <>
       {animalItems.map((item) => (

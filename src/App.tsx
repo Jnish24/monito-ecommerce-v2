@@ -1,5 +1,9 @@
 import "./assets/styles/App.css";
-import { NavigationContext, AnimalCardContext } from "./utils/context";
+import {
+  NavigationContext,
+  AnimalCardContext,
+  ProductCardContext,
+} from "./utils/context";
 import Home from "./pages/Home";
 
 const App: React.FC = () => {
@@ -81,13 +85,66 @@ const App: React.FC = () => {
     },
   ];
 
+  const productData = [
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+    {
+      name: "Reflex Plus Adult Cat Food Salmon",
+      type: "Dog Food",
+      size: "385",
+      price: "89",
+    },
+  ];
+
   return (
     <>
-      <AnimalCardContext.Provider value={animalData}>
-        <NavigationContext.Provider value={navItems}>
-          <Home />
-        </NavigationContext.Provider>
-      </AnimalCardContext.Provider>
+      <ProductCardContext.Provider value={productData}>
+        <AnimalCardContext.Provider value={animalData}>
+          <NavigationContext.Provider value={navItems}>
+            <Home />
+          </NavigationContext.Provider>
+        </AnimalCardContext.Provider>
+      </ProductCardContext.Provider>
     </>
   );
 };
