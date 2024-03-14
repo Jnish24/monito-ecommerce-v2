@@ -1,88 +1,13 @@
 import pomDog from "../../assets/img-temporary/Pomeranian-puppy.jpg";
-import gift from "../../assets/svg/gift.svg";
-
-const animalData = [
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-    gift: "YESasdasdasdasdasdYES",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-  {
-    id: "MO231",
-    breed: "Pomeranian",
-    size: "Tiny",
-    color: "White",
-    gender: "Male",
-    age: "2 months",
-    price: "45.000",
-  },
-];
+import { useAnimalContext } from "../../utils/context";
 
 const CardAnimal: React.FC = () => {
+  const animalItems = useAnimalContext();
   return (
     <>
-      {animalData.map((item, index) => (
+      {animalItems.map((item) => (
         <div
-          key={index}
+          key={item.id}
           className="flex w-[11.5625rem] flex-col justify-self-center rounded-[0.75rem] shadow-xl lg:w-[17.5rem]"
         >
           <img

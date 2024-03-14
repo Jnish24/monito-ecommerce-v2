@@ -2,15 +2,20 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import HomeAnimals from "../components/HomeAnimals";
-import HomeProducts from "../components/HomeProducts";
 
 function Home() {
   return (
     <>
       <Hero />
-      <HomeAnimals />
+      <HomeAnimals
+        smallHeader="What's new?"
+        header="Take A Look At Some Of Our Pets"
+      />
       <Banner />
-      <HomeProducts />
+      <HomeAnimals
+        smallHeader="Hard to choose the right products for your pets?"
+        header="Our Products"
+      />
       <Footer />
     </>
   );
