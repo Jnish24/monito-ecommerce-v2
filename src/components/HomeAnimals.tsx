@@ -5,7 +5,6 @@ import CardHomeCatalogue from "./ui/CardHomeCatalogue";
 interface CatalogueProps {
   smallHeader: string;
   header: string;
-  isAnimal: boolean;
 }
 
 const HomeAnimals: React.FC<CatalogueProps> = (props: CatalogueProps) => {
@@ -18,7 +17,7 @@ const HomeAnimals: React.FC<CatalogueProps> = (props: CatalogueProps) => {
         </h2>
       </div>
       <div className="order-2 grid w-full grid-cols-auto-fill justify-center gap-[0.75rem] lg:order-3 lg:gap-[1.75rem] ">
-        <CardHomeCatalogue isAnimal={props.isAnimal} />
+        <CardHomeCatalogue />
       </div>
       <ButtonOutlineArrow className="order-3 max-lg:w-full lg:order-2" />
     </div>

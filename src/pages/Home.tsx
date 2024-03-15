@@ -8,16 +8,10 @@ function Home() {
     <>
       <Hero />
       <HomeAnimals
-        isAnimal={true}
         smallHeader="What's new?"
         header="Take A Look At Some Of Our Pets"
       />
       <Banner />
-      <HomeAnimals
-        isAnimal={false}
-        smallHeader="Hard to choose the right products for your pets?"
-        header="Our Products"
-      />
       <Footer />
     </>
   );
