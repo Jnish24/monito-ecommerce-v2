@@ -9,7 +9,7 @@ const ButtonSolidArrow: React.FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <button
       className={twMerge(
-        "flex items-center justify-between gap-[0.5rem] text-nowrap rounded-full px-[1.75rem] py-[0.75rem] text-monitoPrimary outline outline-[2px] outline-monitoPrimary",
+        "outline-0.5 flex items-center justify-between gap-2 text-nowrap rounded-full px-7 py-3 text-monitoPrimary outline outline-monitoPrimary",
         props.className,
       )}
     >

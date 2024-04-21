@@ -42,6 +42,14 @@
   .responsive-padding {
     @apply px-[5%] lg:px-[9%];
   }
+
+  .heading {
+    @apply font-xbold text-12 xl:text-15;
+  }
+
+  .sub-heading {
+    @apply text-7 font-bold xl:text-12;
+  }
 }
 
 /* :root {

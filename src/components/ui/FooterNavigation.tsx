@@ -3,7 +3,7 @@ import { useNavContext } from "../../utils/context";
 const FooterNavigation = () => {
   const navItems = useNavContext();
   return (
-    <ul className="flex list-none justify-between lg:gap-[3.75rem]">
+    <ul className="lg:gap-15 flex list-none justify-between">
       {navItems.map((item, index) => (
         <li key={index}>
           <a href="">{item}</a>

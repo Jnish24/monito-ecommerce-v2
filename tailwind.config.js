@@ -2,7 +2,40 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
+      // Sizes
+      spacing: { 15: "3.75rem" },
+      margin: {
+        13: "3.25rem",
+        15: "3.75rem",
+      },
+      fontSize: {
+        2.5: "0.625rem",
+        3.5: "0.875rem",
+        5: "1.25rem",
+        6: "1.5rem",
+        7: "1.75rem",
+        12: "3rem",
+        15: "3.75rem",
+      },
+      outlineWidth: {
+        0.5: "0.125rem",
+      },
+      maxWidth: {
+        container: "1440px",
+      },
+      borderRadius: {
+        2.5: "0.625rem",
+        3: "0.75rem",
+        3.5: "0.875rem",
+        5: "1.25rem",
+        10: "2.5rem",
+      },
+
+      // Misc
       colors: {
         footerBg: "#FCEED5",
         footerBox: "#003459",
@@ -27,17 +60,28 @@ export default {
       gridTemplateColumns: {
         "auto-fill": "repeat(auto-fill, minmax(17.5rem, 1fr))",
       },
-
+      padding: {
+        "desktop-padding": "8.125rem",
+        "mobile-padding": "1rem",
+      },
       backgroundImage: {
-        "hero-desktop": "url('./src/assets/svg/background/hero-desktop.svg')",
-        "hero-mobile": "url('./src/assets/svg/background/hero-mobile.svg')",
+        "hero-desktop":
+          "url('./src/assets/svg/background/bg-hero-desktop.svg')",
+        "hero-mobile": "url('./src/assets/svg/background/bg-hero-mobile.svg')",
         "banner-desktop":
-          "url('./src/assets/svg/banner-background/banner-desktop.svg')",
+          "url('./src/assets/svg/background/bg-banner-desktop.svg')",
         "banner-mobile":
-          "url('./src/assets/svg/banner-background/banner-mobile.svg')",
+          "url('./src/assets/svg/background/bg-banner-mobile.svg')",
+        "banner2-desktop":
+          "url('./src/assets/svg/background/bg-banner2-desktop.svg')",
+        "banner2-mobile":
+          "url('./src/assets/svg/background/bg-banner2-mobile.svg')",
+
+        "banner-text": "url('./src/assets/svg/background/text.svg')",
       },
       screens: {
-        xs: "480px",
+        "1sm": "414px",
+        "1xl": "1440px",
       },
     },
   },

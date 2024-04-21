@@ -7,42 +7,39 @@ import Navigation from "./Navigation";
 const Hero = () => {
   return (
     <>
-      <div className="relative overflow-hidden rounded-b-[1.25rem] bg-gradient-to-br from-footerBg via-footerBg via-60% to-[#FFE7BA] lg:rounded-b-[2.50rem]">
-        <div className="bg-hero-mobile bg-cover lg:bg-hero-desktop">
-          <Navigation />
-          <div className="responsive-padding">
-            <div className="flex max-lg:flex-col max-lg:gap-[3rem]">
-              <div className="flex flex-col justify-center max-lg:pt-[8.75rem] lg:basis-[40%]">
-                <h1 className="font-xbold flex flex-col text-[3rem] text-monitoPrimary lg:text-[3.75rem]">
-                  One More Friend{" "}
-                  <span className="text-[1.75rem] font-bold lg:text-[3rem]">
-                    Thousands More Fun!
-                  </span>
-                </h1>
-                <p className="mb-[2rem] mt-[0.75rem] lg:mt-[1.5rem]">
-                  Having a pet means you have more joy, a new friend, a happy
-                  person who will always be with you to have fun. We have 200+
-                  different pets that can meet your needs!
-                </p>
-                <div className="flex flex-wrap gap-[1rem] max-xs:items-center max-xs:justify-center lg:gap-[1.25rem]">
-                  <ButtonSolidArrow description="View Intro" />
-                  <ButtonPill
-                    description="Explore Now"
-                    className=" px-[2.25rem]"
+      <div className="relative overflow-hidden rounded-b-5 bg-gradient-to-br from-footerBg via-footerBg via-60% to-[#FFE7BA] lg:rounded-b-[2.50rem]">
+        <div className="bg-hero-mobile bg-cover bg-center bg-no-repeat lg:bg-hero-desktop [@media(min-width:1500px)]:bg-contain">
+          <div className="md:container">
+            <Navigation />
+            <div className="px-mobile-padding lg:px-desktop-padding">
+              <div className="flex max-lg:flex-col max-lg:gap-6">
+                <div className="flex flex-col justify-center max-lg:pt-6 lg:mt-5 lg:basis-[40%] lg:self-start">
+                  <h1 className="heading flex flex-col text-monitoPrimary">
+                    One More Friend{" "}
+                    <span className="sub-heading">Thousands More Fun!</span>
+                  </h1>
+                  <p className="mb-8 mt-3 lg:mt-6">
+                    Having a pet means you have more joy, a new friend, a happy
+                    person who will always be with you to have fun. We have 200+
+                    different pets that can meet your needs!
+                  </p>
+                  <div className="flex flex-wrap gap-4 lg:gap-5">
+                    <ButtonSolidArrow description="View Intro" />
+                    <ButtonPill description="Explore Now" className=" px-9" />
+                  </div>
+                </div>
+                <div className="flex flex-auto items-center justify-center">
+                  <img
+                    src={WomanDesktop}
+                    alt="Corgi-and-Woman"
+                    className="pointer-events-none w-auto max-lg:hidden"
+                  />
+                  <img
+                    src={WomanMobile}
+                    alt="Corgi-and-Woman"
+                    className="pointer-events-none w-[500px] lg:hidden"
                   />
                 </div>
-              </div>
-              <div className="flex flex-auto items-center justify-center">
-                <img
-                  src={WomanMobile}
-                  alt="Corgi-and-Woman"
-                  className="pointer-events-none w-[500px] lg:hidden"
-                />
-                <img
-                  src={WomanDesktop}
-                  alt="Corgi-and-Woman"
-                  className="pointer-events-none max-lg:hidden"
-                />
               </div>
             </div>
           </div>
